@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="satoritechprueba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Satori Tech Prueba" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sN-Wf-Lzp">
+                                <rect key="frame" x="20" y="20" width="335" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="YtD-Cr-VLL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="36"/>
+                                <color key="textColor" systemColor="systemIndigoColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="systemGrayColor"/>
+                                <size key="shadowOffset" width="3" height="2"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="iv5-b3-vRZ">
+                                <rect key="frame" x="20" y="99" width="335" height="250"/>
+                                <color key="backgroundColor" red="0.94618709556138247" green="0.94058204361248532" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="ckU-eE-z2M"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="sKL-rN-Tag" userLabel="StackNombre">
+                                <rect key="frame" x="20" y="461.5" width="335" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presiona el boton para iniciar" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59p-Bw-9hr">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="77"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="137" id="GCr-5V-jI1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="30"/>
+                                        <color key="textColor" red="0.86178559296718749" green="0.86710535373884379" blue="0.35387296118762779" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="systemGray2Color"/>
+                                        <size key="shadowOffset" width="2" height="3"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtn-ed-7nC">
+                                <rect key="frame" x="70" y="558" width="235" height="40"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oqG-zT-AcR"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Mostrar Pokemón">
+                                    <fontDescription key="titleFontDescription" name="Arial-BoldMT" family="Arial" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonCargarPokemon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e18-UH-Sfk"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="a7c-2P-fDn" userLabel="stackImagenes">
+                                <rect key="frame" x="20" y="354" width="335" height="102.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="UOc-e6-eEx">
+                                        <rect key="frame" x="0.0" y="0.0" width="166" height="102.5"/>
+                                        <color key="backgroundColor" red="0.94618709560000003" green="0.94058204359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.svg" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-Pq-6bL">
+                                        <rect key="frame" x="169" y="0.0" width="166" height="102.5"/>
+                                        <color key="backgroundColor" red="0.94618709560000003" green="0.94058204359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102.5" id="foI-PF-EMI"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sKL-rN-Tag" firstAttribute="top" secondItem="a7c-2P-fDn" secondAttribute="bottom" constant="5" id="9vz-px-Otm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a7c-2P-fDn" secondAttribute="trailing" constant="20" id="B9q-fw-QsO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iv5-b3-vRZ" secondAttribute="trailing" constant="20" id="G0X-ei-zmr"/>
+                            <constraint firstItem="wtn-ed-7nC" firstAttribute="top" secondItem="sKL-rN-Tag" secondAttribute="bottom" constant="19.5" id="Ga0-Gq-NOv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3sN-Wf-Lzp" secondAttribute="trailing" constant="20" id="IRg-Ax-Z9k"/>
+                            <constraint firstItem="iv5-b3-vRZ" firstAttribute="top" secondItem="3sN-Wf-Lzp" secondAttribute="bottom" constant="30" id="Ire-kB-7lS"/>
+                            <constraint firstItem="3sN-Wf-Lzp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OhC-uv-CEj"/>
+                            <constraint firstItem="iv5-b3-vRZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cqO-Eb-JBa"/>
+                            <constraint firstItem="sKL-rN-Tag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ghA-eb-X4X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wtn-ed-7nC" secondAttribute="trailing" constant="70" id="j66-qy-h8c"/>
+                            <constraint firstItem="wtn-ed-7nC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="lDu-eO-at3"/>
+                            <constraint firstItem="a7c-2P-fDn" firstAttribute="top" secondItem="iv5-b3-vRZ" secondAttribute="bottom" constant="5" id="nDK-v5-WQx"/>
+                            <constraint firstItem="3sN-Wf-Lzp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="pgH-Gj-eQ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sKL-rN-Tag" secondAttribute="trailing" constant="20" id="rsW-ru-D4X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wtn-ed-7nC" secondAttribute="bottom" constant="20" id="sFb-f3-n2L"/>
+                            <constraint firstItem="a7c-2P-fDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vMd-g8-ZzN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonObtenerOutlet" destination="wtn-ed-7nC" id="QUE-Wl-qQg"/>
+                        <outlet property="constraintHeightMainImage" destination="ckU-eE-z2M" id="tbJ-Eb-jnz"/>
+                        <outlet property="constraintHeightStackImages" destination="foI-PF-EMI" id="ByR-uL-0Bw"/>
+                        <outlet property="imageView2Pokemon" destination="UOc-e6-eEx" id="FKu-hB-Sae"/>
+                        <outlet property="imageView3Pokemon" destination="jgT-Pq-6bL" id="Dee-IA-Tc8"/>
+                        <outlet property="imageViewPokemon" destination="iv5-b3-vRZ" id="uIZ-Xe-Nme"/>
+                        <outlet property="labelNombrePokemon" destination="59p-Bw-9hr" id="Tnx-Oa-5d1"/>
+                        <segue destination="hgD-BW-79S" kind="presentation" identifier="segueLoader" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="J7P-0Q-Ncn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-12" y="3.1484257871064472"/>
+        </scene>
+        <!--Loader View Controller-->
+        <scene sceneID="7Li-9H-7PK">
+            <objects>
+                <viewController storyboardIdentifier="loaderVC" id="hgD-BW-79S" customClass="LoaderViewController" customModule="satoritechprueba" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hFz-Xk-mjl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bTi-y8-2U3">
+                                <rect key="frame" x="112.5" y="250" width="150" height="167"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KPN-J2-wX8">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="OFC-Ym-Zf7"/>
+                                            <constraint firstAttribute="height" constant="150" id="VeU-ln-Xhk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cargando Pokemon ...." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ti1-yG-S4Z">
+                                        <rect key="frame" x="0.0" y="150" width="150" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8rY-Ke-yy0"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bTi-y8-2U3" firstAttribute="centerY" secondItem="hFz-Xk-mjl" secondAttribute="centerY" id="U8Y-4t-NmW"/>
+                            <constraint firstItem="bTi-y8-2U3" firstAttribute="centerX" secondItem="hFz-Xk-mjl" secondAttribute="centerX" id="us3-t9-aRL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageViewNewLoader" destination="KPN-J2-wX8" id="oZR-ea-fHC"/>
+                        <outlet property="stackLoader" destination="bTi-y8-2U3" id="YeJ-EQ-yvA"/>
+                        <outlet property="viewBackgroundLoader" destination="hFz-Xk-mjl" id="wPq-YZ-lao"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOs-cp-G3k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-564" y="743"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fondo.svg" width="2052" height="2049"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
